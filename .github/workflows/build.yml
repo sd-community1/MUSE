@@ -22,12 +22,14 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Gradle 8.4 directly
+      - name: Install Gradle 8.4
         run: |
           wget -q https://services.gradle.org/distributions/gradle-8.4-bin.zip
           unzip -q gradle-8.4-bin.zip
-          export PATH=$PWD/gradle-8.4/bin:$PATH
           echo "$PWD/gradle-8.4/bin" >> $GITHUB_PATH
+
+      - name: Remove .gitkeep files
+        run: find app/src/main/res -name ".gitkeep" -delete
 
       - name: Build Debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
