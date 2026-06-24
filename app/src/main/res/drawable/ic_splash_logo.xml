@@ -5,7 +5,6 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- MUSE M logo with soundwave in the valley -->
     <path
         android:pathData="M20,84 L28,36 L54,66 L80,36 L88,84"
         android:strokeColor="#C9A961"
@@ -14,18 +13,12 @@
         android:strokeLineJoin="round"
         android:fillColor="@android:color/transparent"/>
 
-    <!-- Soundwave bars in the M valley -->
-    <rect
-        android:x="49"
-        android:y="60"
-        android:width="3"
-        android:height="16"
+    <path
+        android:pathData="M49,60 L49,76 L52,76 L52,60 Z"
         android:fillColor="#C9A961"/>
-    <rect
-        android:x="56"
-        android:y="56"
-        android:width="3"
-        android:height="20"
+
+    <path
+        android:pathData="M56,56 L56,76 L59,76 L59,56 Z"
         android:fillColor="#C9A961"/>
 
 </vector>
