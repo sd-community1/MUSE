@@ -12,7 +12,13 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:fillColor="@android:color/transparent"/>
-    <rect android:x="48" android:y="58" android:width="4" android:height="18" android:fillColor="#C9A961"/>
-    <rect android:x="56" android:y="53" android:width="4" android:height="23" android:fillColor="#C9A961"/>
+
+    <path
+        android:pathData="M48,58 L48,76 L52,76 L52,58 Z"
+        android:fillColor="#C9A961"/>
+
+    <path
+        android:pathData="M56,53 L56,76 L60,76 L60,53 Z"
+        android:fillColor="#C9A961"/>
 
 </vector>
